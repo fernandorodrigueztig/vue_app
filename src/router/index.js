@@ -1,6 +1,17 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import VueXgplayer from 'vue-xgplayer'
+
+Vue.use(VueXgplayer, {
+  // globalOptions
+  enterLogo: {
+    url: '/images/video-player-loading.png',
+    width: 100,
+    height: 40
+  },
+  playsinline: true
+})
 
 Vue.use(VueRouter)
 

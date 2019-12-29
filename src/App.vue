@@ -1,17 +1,20 @@
 <template>
   <div id="app">
    <listaComponent></listaComponent>
-
+    <videoplayer></videoplayer>
   </div>
 </template>
 
 <script>
 import listaComponent from './components/lista'
+import videoplayer from './components/videoplayer'
+
 
 export default {
   name: 'app',
   components: {
-    listaComponent
+    listaComponent,
+    videoplayer
   }
 }
 </script>
